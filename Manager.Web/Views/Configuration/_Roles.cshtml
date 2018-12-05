@@ -1,0 +1,22 @@
+﻿@using Abp.Web.Mvc.Extensions
+@using Manager.Core.Configuration.Roles;
+@using Abp.Localization;
+
+<script type="text/javascript">
+
+    SITE.AREA.CONFIGURATION = {
+        ROLES : {
+            settings: {
+                currentLanguageName : "@ViewBag.CurrentLanguageName",
+                isRolMaster : @(User.IsInRole(StaticRoleNames.Host.Master.ToString()).ToString().ToLower()) ? true : false,
+                isRolAdmin : @(User.IsInRole(StaticRoleNames.Tenants.Admin.ToString()).ToString().ToLower()) ? true : false
+            }
+        }
+    }
+</script>
+
+@Html.IncludeScript("~/Content/scripts/Configuration/_Roles.min.js")
+
+<div id="RolesArea">
+    <div id="jsGrid"></div>
+</div>

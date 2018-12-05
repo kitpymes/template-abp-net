@@ -1,0 +1,65 @@
+﻿#NavModulesArea {
+    height: 100%;
+    height: -webkit-calc(100% - 95px);
+    height: calc(100% - 95px);
+    letter-spacing: .7px;
+    width: 100%;
+}
+#NavModulesArea ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#NavModulesArea .modules-title {
+    -webkit-transition: all .25s,font .1s .15s,color .1s .15s;
+    -o-transition: all .25s,font .1s .15s,color .1s .15s;
+    transition: all .25s,font .1s .15s,color .1s .15s;
+    padding: 0 22px;
+    font-weight: bold;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #fff;
+    background:#444;
+}
+#NavModulesArea .modules-title span{
+    float:right;
+    padding-top: 11px;
+}
+#NavModulesArea .modules-item {
+    position: relative;
+    white-space: nowrap;
+}
+#NavModulesArea ul>.modules-item.active {
+    letter-spacing: 1px;
+    background-color:#f1f4f5;
+}
+#NavModulesArea .modules-item a {
+    display: block;
+    color: #666;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 0 30px;
+    line-height: 45px;
+    text-decoration: none;
+}
+#NavModulesArea .modules-item i {
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+    right: 21px;
+    position: absolute;
+    font-size: 17px;
+    visibility: hidden;
+    padding-top: 12px;
+}
+#NavModulesArea .modules-item.active i {
+    visibility:visible !important;
+} 
+#NavModulesArea ul>.modules-item:hover a{
+    border-left: 6px solid #444;
+}
+#NavModulesArea ul>.modules-item.active>a {
+    background: 0 0;
+    border-left: 6px solid #999;
+}              
+  

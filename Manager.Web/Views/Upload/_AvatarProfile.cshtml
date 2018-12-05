@@ -1,0 +1,86 @@
+﻿@using Abp.Web.Mvc.Extensions
+@model Manager.Web.Models.Upload.UploadConfigViewModel
+
+@Html.IncludeStyle("~/Content/css/Upload/_AvatarProfile.min.css")
+
+<div id="AvatarProfileArea">
+    <div id="upload-error" class="center-block" style="display:none;"></div>
+    <div class="upload-content center-block">
+        <input id="upload" name="files" type="file" class="file-loading" accept="image/*">
+    </div>
+</div>
+
+<script>
+    $(function () {
+        var $avatarProfileArea =  $("#AvatarProfileArea"),
+            $navUserImageProfile = $("#NavUserArea").find("img"),
+            $inputUpload = $avatarProfileArea.find("#upload"),
+            _initialPreview = [],
+            _initialPreviewConfig = [];
+
+        @if (Model.HasInitialPreviewAsData)
+        {
+            foreach (Manager.Web.Models.Upload.PreviewViewModel item in Model.InitialPreviewConfig)
+            {
+                @:_initialPreviewConfig.push({ url: "@item.url", key: "@item.key", showDelete: true, showZoom: true, showDrag: false });
+                    }
+
+            foreach (string path in Model.InitialPreview)
+            {
+                @:_initialPreview.push("@path");
+                    }
+        }
+
+        $inputUpload.fileinput({
+            browseOnZoneClick: true,
+            autoReplace: true,
+            overwriteInitial: true,
+            showRemove: false,
+            showUpload: false,
+            showCancel: false,
+            showCaption: false,
+            showClose: false,
+            showBrowse: false,
+
+            uploadAsync: true,
+            initialPreviewAsData: "@Model.HasInitialPreviewAsData" === "True",
+            initialPreview: _initialPreview,
+            initialPreviewConfig: _initialPreviewConfig,
+            defaultPreviewContent: "@Html.Raw(Model.DefaultPreviewContent)",
+            elErrorContainer: '#upload-error',
+
+            uploadUrl: '@Url.Action("UploadsFiles", "Upload")',
+            uploadExtraData: { pathFile: "@(Model.UploadsPath + Model.StaticName + "." + Model.StaticExtension)" },
+            deleteUrl: '@Url.Action("DeleteFiles", "Upload")',
+            deleteExtraData: { pathFile: "@(Model.UploadsPath + Model.StaticName + "." + Model.StaticExtension)"},
+
+            language: "@Model.Languaje",
+            allowedFileExtensions:[ "jpg", "gif", "png", "jpeg" ],
+            maxFileCount: @Model.MaxFileCount,
+            maxFileSize: @Model.MaxFileSize,
+
+        }).on('fileuploaderror', function (event, data, msg) {
+            $avatarProfileArea.find('#upload-error').fadeOut(8000, function () {
+                $inputUpload.fileinput("reset");
+            });
+        }).on('filesuccessremove', function (event, id) {
+            abp.ajax({
+                url: '@Url.Action("DeleteFiles", "Upload")',
+                type: 'POST',
+                data: JSON.stringify({
+                    pathFile: "@(Model.UploadsPath + Model.StaticName + "." + Model.StaticExtension)"
+                })
+            }).done(function () {
+                $navUserImageProfile.attr("src", "/Content/images/users/profile.jpg?v=" + new Date().getTime());
+            });
+        }).on('fileloaded', function (event, file, previewId, index, reader) {
+            //var form = data.form, files = data.files, extra = data.extra,
+            //  response = data.response, reader = data.reader;
+            $inputUpload.fileinput("upload");
+
+            setTimeout(function () {
+                $navUserImageProfile.attr("src", "/Content/uploads/user-" + @Model.UserId + "/avatar/profile.jpg?v=" + new Date().getTime());
+            }, 1000);
+        });
+    });
+</script>

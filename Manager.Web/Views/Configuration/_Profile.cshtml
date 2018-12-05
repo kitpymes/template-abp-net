@@ -1,0 +1,109 @@
+﻿@using Abp.Web.Mvc.Extensions
+@using USER = Manager.Core.Configuration.Users.User
+@model Manager.Web.Models.Configuration.Profile.ProfileViewModel
+
+@Html.IncludeStyle("~/Content/css/Configuration/_Profile.min.css")
+
+<script type="text/javascript">
+
+    SITE.AREA.CONFIGURATION = {
+        PROFILE : {
+            validation: {
+                getRules: function () {
+                    return {
+                        EmailAddress_MaxLength: "@USER.MaxEmailAddressLength",
+                        Password_MaxLength: "@USER.MaxPlainPasswordLength",
+                        Password_MinLength: "@USER.MinPlainPasswordLength",
+                        Name_MaxLength: "@USER.MaxNameLength",
+                        Surname_MaxLength: "@USER.MaxSurnameLength"
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+@Html.IncludeScript("~/Content/scripts/Configuration/_Profile.min.js")
+
+<div id="ProfileArea">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">                        
+                        @L("CONFIG.PROFILE.Edit")
+                    </h3>
+                </div>
+
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4 col-sx-4">
+                            <div class="form-group">
+                               @Html.Action("_AvatarProfile", "Upload", Model.Avatar)
+                            </div>
+                        </div>
+                        <form id="ProfileForm">
+                            <div class="col-lg-8 col-sm-8 col-sx-8">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6 col-sx-6">
+                                        <div class="form-group float-label has-feedback">
+                                            <label for="NameInput" class="control-label">@L("CONFIG.PROFILE.Name")</label>
+                                            <input type="text" name="Name" id="NameInput" value="@Model.Name" class="form-control" tabindex="1">
+                                            <span class="glyphicon form-control-feedback" id="validNameInput"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-sx-6">
+                                        <div class="form-group float-label has-feedback">
+                                            <label for="SurnameInput" class="control-label">@L("CONFIG.PROFILE.Surname")</label>
+                                            <input type="text" name="Surname" id="SurnameInput" value="@Model.Surname" class="form-control" tabindex="2">
+                                            <span class="glyphicon form-control-feedback" id="validSurnameInput"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6 col-sx-6">
+                                        <div class="form-group float-label has-feedback">
+                                            <label for="EmailAddressInput" class="control-label">@L("CONFIG.PROFILE.EmailAddress")</label>
+                                            <input type="email" name="EmailAddress" id="EmailAddressInput" value="@Model.EmailAddress" class="form-control" tabindex="3">
+                                            <span class="glyphicon form-control-feedback" id="validEmailAddressInput"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6 col-sx-6">
+                                        <div class="form-group has-feedback">
+                                            <label for="PasswordInput" class="control-label">@L("CONFIG.PROFILE.Password")</label>
+                                            <input type="password" name="Password" id="PasswordInput" value="" class="form-control" tabindex="4">
+                                            <span class="glyphicon form-control-feedback" id="validPasswordInput"></span>
+                                            <span class="icon-password glyphicon glyphicon-eye-open" data-toggle="tooltip" title="@L("CONFIG.PROFILE.ShowPassword")"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-sx-6">
+                                        <div class="form-group has-feedback">
+                                            <label for="PasswordInput" class="control-label">@L("CONFIG.PROFILE.PasswordRepeat")</label>
+                                            <input type="password" name="PasswordRepeat" id="PasswordRepeatInput" value="" class="form-control" tabindex="5">
+                                            <span class="glyphicon form-control-feedback" id="validPasswordRepeatInput"></span>
+                                            <span class="icon-password-repeat glyphicon glyphicon-eye-open" data-toggle="tooltip" title="@L("CONFIG.PROFILE.ShowPassword")"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-lg-2 col-lg-offset-10">
+                                        <button id="ProfileSubmitButton" type="submit" class="btn btn-primary pull-right" tabindex="6"><i class="fa fa-sign-in"></i> @L("CONFIG.PROFILE.Save")</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+

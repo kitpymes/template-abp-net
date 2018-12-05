@@ -1,0 +1,23 @@
+﻿@model Manager.Web.Models.Shared.Messages
+
+@if (Model != null)
+{
+    <div class="alert alert-@Model.TypeAlert.ToString()">
+        @if (Model.IsShowCloseBtn)
+        {
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        }
+
+        <i class="fa fa-warning"></i>
+        @if (!Model.Title.IsEmpty())
+        {
+            <strong>@Model.Title</strong>
+        }
+
+        @Model.Msg
+    </div>
+}
+
+<style>
+    .alert{ font-size:13px;}
+</style>

@@ -1,0 +1,22 @@
+.float-label {
+    position: relative;
+    margin-bottom: 40px;
+}
+.float-label label {
+	position: absolute;
+	top: -1em;
+	opacity: 0;
+}
+.float-label.focused label,
+.float-label.populated label {
+	opacity: .5;
+}
+.float-label input,
+.float-label textarea,
+.float-label label {
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-ms-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+}

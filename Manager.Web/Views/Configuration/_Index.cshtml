@@ -1,0 +1,10 @@
+﻿@model Manager.Web.Models.Shared.TabsMenuViewModel
+
+<div id="ConfigurationArea">
+    @Html.Partial("_TabsMenu", Model)
+    <div id="tab-content">
+        <div class="tab-pane fade in active container-fluid">
+            @Html.Action("_Profile")
+        </div>
+    </div>
+</div>

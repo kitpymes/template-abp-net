@@ -1,0 +1,48 @@
+user:
+1 - sebastian
+2 - patty
+13 - cris
+
+roles:
+1 - master
+2 - admin
+4 - user
+
+AbpAuditLogs
+AbpPermissions
+AbpRoles
+AbpSettings
+AbpTenants
+AbpUserLoginAttempts
+AbpUserLogins
+AbpUserRoles
+AbpUser
+
+------------------------------------------
+
+AbpAuditLogs: audita el logueo, el servicio que uso, te dice el navegador que uso, el usuario, lo que tardo etc
+AbpBackgroundJobs: http://aspnetboilerplate.com/Pages/Documents/Background-Jobs-And-Workers
+AbpEditions: http://aspnetboilerplate.com/Pages/Documents/Zero/Edition-Management
+AbpFeatures: http://aspnetboilerplate.com/Pages/Documents/Feature-Management
+AbpLanguages: http://aspnetboilerplate.com/Pages/Documents/Zero/Language-Management
+AbpLanguagesTexts: http://aspnetboilerplate.com/Pages/Documents/Zero/Language-Management
+AbpNotifications: http://aspnetboilerplate.com/Pages/Documents/Notification-System
+AbpNotificationSubscriptions: http://aspnetboilerplate.com/Pages/Documents/Notification-System
+AbpOrganizationUnits: http://aspnetboilerplate.com/Pages/Documents/Zero/Organization-Units
+AbpPermissions: http://aspnetboilerplate.com/Pages/Documents/Zero/Permission-Management
+AbpRoles: http://aspnetboilerplate.com/Pages/Documents/Zero/Role-Management
+AbpSettings: http://aspnetboilerplate.com/Pages/Documents/Setting-Management
+AbpTenants: http://aspnetboilerplate.com/Pages/Documents/Zero/Tenant-Management
+AbpUserLoginAttempts: audita el logueo, te dice el navegdor que uso, el usuario, lo que tardo etc
+AbpUserLogins: esta tabla es por si usuamos login por facebook, twiteer o tros proveedores.
+AbpUserNotifications: http://aspnetboilerplate.com/Pages/Documents/Notification-System
+AbpUserOrganizationUnits: http://aspnetboilerplate.com/Pages/Documents/Zero/Organization-Units
+AbpUserRoles: union de user y roles
+AbpUser: usuarios
+
+tablas con esquema: HANGFIRE: http://aspnetboilerplate.com/Pages/Documents/Hangfire-Integration
+
+
+
+
+

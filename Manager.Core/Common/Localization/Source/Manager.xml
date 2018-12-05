@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="en">
+  <texts>
+    <!--| MENU | ACCOUNT | CONFIG | DASHBOARD |-->
+
+    <!--MENU-->
+
+    <!--UserMenu-->
+    <text name="MENU.FullScreen" value="FULL SCREEN" />
+    <text name="MENU.Logout" value="LOGOUT" />
+    <text name="MENU.Configuration" value="CONFIGURATION" />
+
+    <!--GENERAL ModulesMenu-->
+    <text name="MENU.General" value="GENERAL" />
+    <text name="MENU.Dashboard" value="DASHBOARD" />
+    <text name="MENU.Reports" value="REPORTS" />
+    <text name="MENU.Emails" value="EMAILS" />
+    <text name="MENU.Tickets" value="TICKETS" />
+
+    <!--MODULOS ModulesMenu-->
+    <text name="MENU.Modules" value="MODULES" />
+    <text name="MENU.Customers" value="CUSTOMERS" />
+
+    <!--CONFIGURACION TabsMenu -->
+    <text name="MENU.Profile" value="PROFILE" />
+    <text name="MENU.Billing" value="BILLING" />
+    <text name="MENU.Company" value="COMPANY" />
+    <text name="MENU.AuditsLog" value="LOG" />
+    <text name="MENU.Users" value="USERS" />
+    <text name="MENU.Roles" value="ROLES" />
+
+    <!--DASHBOARD TabsMenu -->
+    <text name="MENU.UserInfo" value="USERS INFO" />
+    <text name="MENU.BrowserInfo" value="BROWSER INFO" />
+   
+    <!--MENU END-->
+
+    <!--ACCOUNT-->
+    <text name="ACCOUNT.LogIn" value="Log in" />
+    <text name="ACCOUNT.Send" value="Send" />
+    <text name="ACCOUNT.EmailAddress" value="Email Address" />
+    <text name="ACCOUNT.Password" value="Password" />
+    <text name="ACCOUNT.RememberMe" value="Remember me" />
+    <text name="ACCOUNT.ForgotPassword" value="Forgot password?" />
+    <text name="ACCOUNT.PasswordResetCode" value="Password reset code." />
+    <text name="ACCOUNT.ForgotPasswordMessage" value="A password reset link will be sent to your email. If youdon't get an email within a few minutes, please re-try." />
+    <text name="ACCOUNT.LoginFailed" value="Login failed!" />
+    <text name="ACCOUNT.InvalidEmailAddress" value="Can not find this email address in the system." />
+    <text name="ACCOUNT.InvalidPassword" value="Invalid password" />
+    <text name="ACCOUNT.ThereIsNoTenantDefinedWithName{0}" value="There is no tenant defined with name {0}" />
+    <text name="ACCOUNT.TenantIsNotActive" value="Tenant {0} is not active." />
+    <text name="ACCOUNT.UserIsNotActiveAndCanNotLogin" value="User {0} is not active and can not log in." />
+    <text name="ACCOUNT.EmailIsNotConfirmedAndCanNotLogin" value="Your email address is not confirmed. You can not login" />
+    <text name="ACCOUNT.PasswordMandatory" value="The Password is mandatory." />
+    <text name="ACCOUNT.WaitingForConfirmEmailLink" value="Confirm the link we sent to your email." />
+    <text name="ACCOUNT.PasswordChangedSuccessfully" value="Your password was successfully changed." />
+    <text name="ACCOUNT.TenantNameCanNotBeEmpty" value="Tenant name can not be empty" />
+    <text name="ACCOUNT.FormIsNotValidMessage" value="Form is not valid. Please check and fix errors." />
+    <text name="ACCOUNT.PleasEnterYourNewPassword" value="Please enter your new password." />
+    <text name="ACCOUNT.PasswordRepeat" value="Password repeat" />
+    <text name="ACCOUNT.EmailAddressNotFindInSystem" value="Can not find this email address in the system." />
+    <text name="ACCOUNT.WaitingForActivationEmail" value="Your account is waiting to be activated. Your email address is not confirmed." />
+    <text name="ACCOUNT.WaitingForActivationMessage" value="Your account is waiting to be activated by system admin." />
+    <text name="ACCOUNT.YouCanNotResetYourPasswordSendAResetPasswordLinkToYourEmail" value="You can not reset your password. You must first send a reset password link to your email." />
+    <text name="ACCOUNT.InvalidPasswordResetCode" value="Invalid password reset code." />
+    <text name="ACCOUNT.ResetCodeExpired" value="Code invalid password reset has expired. You must send a password reset link again." />
+    <!--ACCOUNT END-->
+
+    <!--CONFIG-->
+    <text name="CONFIG.PROFILE.Name" value="Name" />
+    <text name="CONFIG.PROFILE.Surname" value="Surname" />
+    <text name="CONFIG.PROFILE.EmailAddress" value="Email" />
+    <text name="CONFIG.PROFILE.Password" value="New password" />
+    <text name="CONFIG.PROFILE.PasswordRepeat" value="Password repeat" />
+    <text name="CONFIG.PROFILE.Save" value="Save" />
+    <text name="CONFIG.PROFILE.Edit" value="Edit" />
+    <text name="CONFIG.PROFILE.ShowPassword" value="Show password" />
+
+    <text name="CONFIG.ROLES.Name" value="Name" />
+    <text name="CONFIG.ROLES.DisplayName" value="Display Name" />
+    <!--CONFIG END-->
+    
+
+    <!--COMMON-->
+
+    <!-- MESSAGES -->
+    <text name="COMMON.MSG.EXCEPTION.ErrorMessageUserDefault" value="An unexpected error has occurred. Please try again later." />
+    <text name="COMMON.MSG.ChangesSuccessfullySaved" value="Changes were successfully saved." />
+    <!-- MESSAGES END-->
+    
+    <!-- VALIDATIONS -->
+    <text name="COMMON.MSG.VALIDATION.Mandatory" value="The field {0} is mandatory." />
+    <text name="COMMON.MSG.VALIDATION.InvalidFormat" value="The field {0} has an invalid format." />
+    <text name="COMMON.MSG.VALIDATION.MaxLength" value="The field {0} must contain at most {1} characters." />
+    <text name="COMMON.MSG.VALIDATION.MinLength" value="The field {0} must contain at least {1} characters." />
+    <text name="COMMON.MSG.VALIDATION.Match" value="Field {0} does not match the field {1}." />
+    <!-- VALIDATIONS END-->
+
+
+
+
+
+
+
+
+
+
+    <text name="Name" value="Name" />
+    <text name="Surname" value="Surname" />
+    <text name="EmailAddress" value="Email address" />
+    
+    
+
+    <text name="TenancyName" value="Tenancy name" />
+    <text name="UserNameOrEmail" value="User name or email" />
+  
+   
+    
+    
+    
+    
+    <text name="AdminEmailAddress" value="Admin email address" />
+    <text name="Save" value="Save" />
+    <text name="Cancel" value="Cancel" />
+    <text name="Register" value="Register" />
+    <text name="RegisterSuccessfully" value="Successfully registered" />
+    <text name="OrLoginWith" value="Or login with" />
+    <text name="TenantSelection" value="Tenant Selection" />
+    
+    
+    <text name="Master" value="Master" />
+    <text name="Tenants" value="Tenants" />
+    <!--COMMON END-->
+
+    <!--MESSAGES MANDATORY-->
+   
+    <!--MANDATORY END-->
+
+    <!--MESSAGES-->
+    <text name="WellcomeMessage" value="Welcome to Manager!" />
+    
+    <text name="SavedSuccessfully" value="Saved successfully" />
+    <text name="CreateNewTenant" value="Create new tenant" />
+    
+   
+    <text name="YourAccountIsActivated" value="Congratulations! Your account is activated. Enter your email address and password to login." />
+    <text name="ThanksRegisterWaitingForActivationEmail" value="Thanks for having registered, please confirm the email that we have sent." />
+    
+    <text name="TenantName_Regex_Description" value="Tenant name must be at least 2 chars, starts with a letter and continue with letter, number, dash or underscore." />
+    <text name="DefaultPasswordIs" value="Default password is {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="Can be empty to login as host." />
+    <text name="TenantSelection_Detail" value="Please select one of the following tenants." />
+    
+   
+    
+    <text name="InvalidUserNameOrPassword" value="Invalid user name or password" />
+   
+    
+    
+    
+    
+    <text name="PleaseEnterLoginInformation" value="Please enter login information" />
+    
+    
+    
+    <text name="NotResetPasswordSendPasswordResetLinkToYourMail" value="You can not reset your password. You must first send a reset password link to your email." />
+    <text name="PasswordRepeatIsInvalid" value="Password repeat is invalid!" />
+    <text name="PasswordResetCodeIsInvalid" value="Password reset code is invalid!" />
+    <text name="PasswordResetCodeIsExpire!" value="Password reset code is expire!" />
+    <!--MESSAGES END-->
+
+    <!--MAIL-->
+    <text name="Mail.ForgotPasword.Subject" value="Password reset" />
+    <text name="Mail.ForgotPasword.HtmlTitle" value="Password reset" />
+    <text name="Mail.ForgotPasword.BodyTitle" value="Reset your password, it will expire in 24 hours!" />
+    <text name="Mail.ForgotPasword.BodyDescription" value="Click the link below to reset your password:" />
+    <!--MAIL END-->
+
+  </texts>
+</localizationDictionary>

@@ -1,0 +1,60 @@
+﻿body{
+   background: #F1F4F5;
+   overflow:hidden;
+}
+.panel-warning {
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+.disabled, .disabled:hover, .disabled:focus{
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+    filter: alpha(opacity=65) !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    opacity: .3 !important;
+}
+#BodyArea{
+    margin-left:236px;
+}
+#BodyArea legend {
+    border-bottom: 3px solid #e5e5e5;
+}
+#NavArea{
+    position: fixed;
+    background-color:white;
+    width: 236px;
+    height: 100%;
+}
+#NavArea, #BodyArea{
+    -moz-transition:all 350ms cubic-bezier(.42,0,.58,1);
+	-ms-transition:all 350ms cubic-bezier(.42,0,.58,1);
+	-o-transition:all 350ms cubic-bezier(.42,0,.58,1);
+	-webkit-transition:all 350ms cubic-bezier(.42,0,.58,1);
+	transition:all 350ms cubic-bezier(.42,0,.58,1);
+}
+.nav-area-open {
+    margin-left: 0px;
+}
+.nav-area-close {
+    margin-left: -181px;
+}
+.body-area-open {
+    margin-left: 260px !important;
+}
+.body-area-close {
+    margin-left: 56px !important;
+}
+.scrollable-content{
+   overflow:hidden;
+}
+#tab-content {
+    overflow:auto;
+    height: calc(100% - 40px);
+    max-height:550px; 
+}
+#tab-content .panel-body {
+    margin: 30px;
+}
+

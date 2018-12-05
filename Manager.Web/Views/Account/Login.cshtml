@@ -1,0 +1,197 @@
+﻿@using Abp.Web.Mvc.Extensions
+@using USER = Manager.Core.Configuration.Users.User
+@model Manager.Web.Models.Account.Login.LoginFormViewModel
+
+@section Styles
+{
+    @Html.IncludeStyle("~/Content/css/Account/Login.min.css")
+}
+
+@section Scripts
+{
+    <script type="text/javascript">
+
+        SITE.AREA.ACCOUNT = {
+            LOGIN: {
+                validation: {
+                    getRules: function () {
+                        return {
+                            EmailAddress_MaxLength: "@USER.MaxEmailAddressLength",
+                            Password_MaxLength: "@USER.MaxPlainPasswordLength",
+                            Password_MinLength: "@USER.MinPlainPasswordLength"
+                        }
+                    }
+                }
+            },
+            FORGOTPASSWORD: {
+                validation: {
+                    getRules: function () {
+                        return {
+                            EmailAddress_MaxLength: "@USER.MaxEmailAddressLength"
+                        }
+                    }
+                }
+            }
+        };
+
+    </script>
+
+    @Html.IncludeScript("~/Content/scripts/Account/Login.js")
+
+    
+    <!-- SACAR -->
+    @if(System.Diagnostics.Debugger.IsAttached)
+    {
+        <script>
+            $(function() {
+                $('#EmailAddressInput').val('sferrari.net@gmail.com');
+                $('#PasswordInput').val('123');
+                //$('#LoginSubmitButton').click();
+
+                $('#EmailAddressInput')
+                $('<select class="form-control" id="ddlUsuarios">' +
+                    '<option>sferrari.net@gmail.com</option>' +
+                    '<option>admin@gmail.com</option>' +
+                    '<option>user@gmail.com</option>' +
+                    '<option>javierdepablogonzalez@gmail.com</option>' +
+                  '</select>').insertAfter(".nav");
+                
+                $('#ddlUsuarios').change(function() {
+                    $('#EmailAddressInput').val($(this).val());
+                });
+            });
+        </script>
+    }
+}
+
+<!-- START LoginBGEffectArea -->
+<div id="LoginBGEffectArea" style="display:none;">
+    <div class="segmenter"></div>
+    <h2 class="trigger-headline trigger-headline--hidden">
+        <span>M</span><span>a</span><span>n</span><span>a</span><span>g</span><span>e</span><span>r</span>
+    </h2>
+</div>
+<!-- END LoginBGEffectArea -->
+
+<!-- START LoginArea -->
+<div id="LoginArea">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <form id="LoginForm" class="form-horizontal">
+                    <fieldset>
+                        <legend>@L("ACCOUNT.LogIn")</legend>
+
+                        <div id="LanguajeArea">
+                            <ul class="nav pull-right">
+                                @Html.Action("LanguageSelection", "Layout")
+                            </ul>
+                        </div>
+
+                        <input type="hidden" id="TenancyName" value="">
+                        <input type="hidden" id="ReturnUrlHash" name="returnUrlHash" />
+
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <input type="email" name="EmailAddress" class="form-control" id="EmailAddressInput" placeholder="@L("ACCOUNT.EmailAddress")" value="">
+                                <span class="glyphicon form-control-feedback" id="validEmailAddressInput"></span>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <input type="password" name="Password" class="form-control" id="PasswordInput" placeholder="@L("ACCOUNT.Password")" value="">
+                                <span class="glyphicon form-control-feedback" id="validPasswordInput"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-6 col-sm-6 col-md-5">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" id="RememberMeInput">
+                                        <span class="ripple"></span>
+                                        <span class="check"></span> @L("ACCOUNT.RememberMe")
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-7">
+                                <a id="ForgotPasswordLink" href="#" class="pull-right">@L("ACCOUNT.ForgotPassword")</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button id="LoginSubmitButton" type="submit" class="btn pull-right"> @L("ACCOUNT.LogIn")</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                @*@{
+                    var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes().ToList();
+                    }
+
+                    @if (loginProviders.Count > 0)
+                    {
+                        <p>@L("ACCOUNT.OrLoginWith"):</p>
+
+                        using (Html.BeginForm("ExternalLogin", "Account", method: FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+                            <input type="hidden" name="provider" value="" />
+                            foreach (var provider in loginProviders)
+                            {
+                                <a class="btn btn-default btn-sm social-login-link" title="@provider.AuthenticationType"
+                                    data-provider="@provider.AuthenticationType"
+                                    href="javascript:;">
+                                    <i class="fa fa-@(provider.AuthenticationType.ToLower())"></i> @provider.AuthenticationType
+                                </a>
+                            }
+                        }
+                    }*@
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END LoginArea -->
+
+<!-- START LoginForgotPasswordModalArea -->
+<div id="LoginForgotPasswordModalArea" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="LoginForgotPasswordModalForm" role="form" action="@Url.Action("ForgotPassword")" method="POST">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">@L("ACCOUNT.ForgotPassword")</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <p class="well">@L("ACCOUNT.ForgotPasswordMessage")</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group has-feedback has-error">
+                            <div class="col-lg-12">
+                                <input type="email" name="ForgotPasswordEmailAddress" class="form-control" id="ForgotPasswordEmailAddress" placeholder="@L("ACCOUNT.EmailAddress")" value="">
+                                <span class="glyphicon form-control-feedback" id="validForgotPasswordEmailAddress"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <button type="submit" class="btn btn-primary">@L("ACCOUNT.Send")</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- END LoginForgotPasswordModalArea -->
+
+

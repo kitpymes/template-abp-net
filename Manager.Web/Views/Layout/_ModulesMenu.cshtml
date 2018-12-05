@@ -1,0 +1,49 @@
+﻿@using Abp.Web.Mvc.Extensions
+@model Manager.Web.Models.Layout.ModulesMenuViewModel
+
+@Html.IncludeStyle("~/Content/css/Layout/_ModulesMenu.min.css")
+
+<div id="NavModulesArea">
+    <ul>
+        @foreach (var menuItem in Model.Menu.Items)
+        {
+            <li class="modules-title" role="button" data-toggle="collapse" href="@(".collapse" + menuItem.Name)" aria-expanded="false" aria-controls="@("collapse" + menuItem.Name)">
+
+                @menuItem.DisplayName
+
+                @if (!string.IsNullOrWhiteSpace(menuItem.Icon))
+                {
+                    <span class="@menuItem.Icon"></span>
+                }
+            </li>
+
+            <li class="collapse in  @("collapse" + menuItem.Name)">
+                <ul class="scrollable-content" style="max-height:300px;">
+
+                    @foreach (var subMenuItem in menuItem.Items)
+                    {
+                        MenuCustomData customData = (subMenuItem.CustomData != null) ? (subMenuItem.CustomData as MenuCustomData) : null;
+
+                        <li class="modules-item  @(Model.ActiveMenuItemName == subMenuItem.Name ? "active" : "") ">
+                            <a data-url="@(customData != null && customData.Disabled ? "" : subMenuItem.Url)" class="@(customData != null && customData.Disabled ? "disabled" : "")">
+
+                                <span>@subMenuItem.DisplayName</span>
+                                @if (customData != null && customData.Disabled)
+                                {
+                                    <span class="glyphicon glyphicon-lock"></span>
+                                }
+
+                                @if (!string.IsNullOrWhiteSpace(subMenuItem.Icon))
+                                {
+                                    <i class="@subMenuItem.Icon" aria-hidden="true" title="@subMenuItem.DisplayName" @(customData != null && customData.Tooltip != null ? customData.Tooltip : "")></i>
+                                }
+                            </a>
+                        </li>
+                    }
+
+                </ul>
+            </li>
+        }
+    </ul>
+</div>
+

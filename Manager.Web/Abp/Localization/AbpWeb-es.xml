@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="es">
+  <texts>
+    
+    <!--DEFAULT ERRORS AJAX, YA EXISTE POR DEFECTO LOS ERRORES EN INGLES abp.juery.js-->
+    <text name="DefaultError" value="¡Se ha producido un error!" />
+    <text name="DefaultErrorDetail" value="Detalle de error no enviado por el servidor." />
+    <text name="DefaultError401" value="Usted no se ha autentificado!" />
+    <text name="DefaultErrorDetail401" value="Usted debe estar autenticado (registrarse) con el fin de realizar esta operación." />
+    <text name="DefaultError403" value="Usted no está autorizado!" />
+    <text name="DefaultErrorDetail403" value="Usted no está autorizado para realizar esta operación." />
+    <text name="DefaultError404" value="¡Recurso no encontrado!" />
+    <text name="DefaultErrorDetail404" value="El recurso solicitado no fue encontrado en el servidor." />
+    <!--DEFAULT ERRORS END-->
+
+    <!-- VALIDATIONS -->
+    <text name="COMMON.MSG.VALIDATION.Mandatory" value="Es obligatorio." />
+    <text name="COMMON.MSG.VALIDATION.InvalidFormat" value="Formato invalido." />
+    <text name="COMMON.MSG.VALIDATION.MaxLength" value="Introduzca como máximo {0} caracteres." />
+    <text name="COMMON.MSG.VALIDATION.MinLength" value="Introduzca al menos {0} caracteres" />
+    <text name="COMMON.MSG.VALIDATION.NotMatch" value="Las contraseñas no coinciden." />
+    <!-- VALIDATIONS END-->
+     
+    <!--CONFIG.ROLES-->
+    <text name="CONFIG.ROLES.GRID.COLUMN.Name" value="Nombre" />
+    <text name="CONFIG.ROLES.GRID.COLUMN.DisplayName" value="Nombre a mostrar" />
+    <text name="CONFIG.ROLES.GRID.COLUMN.IsStatic" value="Estatico?" />
+    <text name="CONFIG.ROLES.GRID.COLUMN.IsDefault" value="Default?" />
+    <text name="CONFIG.ROLES.GRID.COLUMN.IsDeleted" value="Eliminar?" />
+    
+    <text name="CONFIG.ROLES.GRID.PLACEHOLDER.Name" value="Ingrese el nombre del rol." />
+    <text name="CONFIG.ROLES.GRID.PLACEHOLDER.DisplayName" value="Ingrese el nombre del rol a mostrar." />
+    
+    <text name="CONFIG.ROLES.GRID.LABEL.IsStatic.Name" value="ESTATICO" />
+    <text name="CONFIG.ROLES.GRID.LABEL.IsDefault.Name" value="DEFAULT" />
+    <text name="CONFIG.ROLES.GRID.LABEL.IsDeleted.Name" value="ELIMINADO" />
+    <text name="CONFIG.ROLES.GRID.LABEL.IsStatic.Title" value="Este rol no se puede modificar." />
+    <text name="CONFIG.ROLES.GRID.LABEL.IsDefault.Title" value="Este rol se le asignara por defecto a los nuevos usuarios." />
+    <text name="CONFIG.ROLES.GRID.LABEL.IsDeleted.Title" value="Este rol no se podra asignar a nuevos usuarios." />
+    
+    <text name="CONFIG.ROLES.GRID.MESSAGES.IsSureDeleteRow.Title" value="Esta seguro" />
+    <text name="CONFIG.ROLES.GRID.MESSAGES.IsSureDeleteRow.Content" value="de eliminar el rol {0}?" />
+    <text name="CONFIG.ROLES.GRID.MESSAGES.RoleIsStaticNotDelete.Title" value="Los roles estaticos no se pueden eliminar." />
+    <text name="CONFIG.ROLES.GRID.MESSAGES.RoleIsDeleting.Title" value="Este rol ya fue eliminado." />
+    <text name="CONFIG.ROLES.GRID.MESSAGES.RoleIsDefaultNotDelete.Title" value="Los roles por defecto no se pueden eliminar." />
+    <!--CONFIG.ROLES END-->
+ 
+  </texts>
+</localizationDictionary>

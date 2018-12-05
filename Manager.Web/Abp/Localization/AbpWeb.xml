@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="en">
+  <texts>
+ 
+    <!-- VALIDATIONS -->
+    <text name="COMMON.MSG.VALIDATION.Mandatory" value="Is mandatory." />
+    <text name="COMMON.MSG.VALIDATION.InvalidFormat" value="Invalid format." />
+    <text name="COMMON.MSG.VALIDATION.MaxLength" value="Enter at at most {0} characters." />
+    <text name="COMMON.MSG.VALIDATION.MinLength" value="Enter at least {0} characters." />
+    <text name="COMMON.MSG.VALIDATION.NotMatch" value="Passwords do not match." />
+    <!-- VALIDATIONS END-->
+
+    <!--CONFIG.ROLES-->
+    <text name="CONFIG.ROLES.GRID.COLUMN.Name" value="Name" />
+    <text name="CONFIG.ROLES.GRID.COLUMN.DisplayName" value="Display name" />
+    <text name="CONFIG.ROLES.GRID.COLUMN.IsStatic" value="Static?" />
+    <text name="CONFIG.ROLES.GRID.COLUMN.IsDefault" value="Default?" />
+    <text name="CONFIG.ROLES.GRID.COLUMN.IsDeleted" value="Deleted?" />
+
+    <text name="CONFIG.ROLES.GRID.PLACEHOLDER.Name" value="Enter the role name." />
+    <text name="CONFIG.ROLES.GRID.PLACEHOLDER.DisplayName" value="Enter the role display name." />
+
+    <text name="CONFIG.ROLES.GRID.LABEL.IsStatic.Name" value="STATIC" />
+    <text name="CONFIG.ROLES.GRID.LABEL.IsDefault.Name" value="DEFAULT" />
+    <text name="CONFIG.ROLES.GRID.LABEL.IsDeleted.Name" value="DELETED" />
+    <text name="CONFIG.ROLES.GRID.LABEL.IsStatic.Title" value="This role can not be modified." />
+    <text name="CONFIG.ROLES.GRID.LABEL.IsDefault.Title" value="This role you will be assigned by default to new users." />
+    <text name="CONFIG.ROLES.GRID.LABEL.IsDeleted.Title" value="This role you may not be assigned to new users." />
+
+    <text name="CONFIG.ROLES.GRID.MESSAGES.IsSureDeleteRow.Title" value="Are you sure" />
+    <text name="CONFIG.ROLES.GRID.MESSAGES.IsSureDeleteRow.Content" value="delete the role {0}?" />
+    <text name="CONFIG.ROLES.GRID.MESSAGES.RoleIsStaticNotDelete.Title" value="Static roles can not be deleted." />
+    <text name="CONFIG.ROLES.GRID.MESSAGES.RoleIsDeleting.Title" value="This role has already been removed." />
+    <text name="CONFIG.ROLES.GRID.MESSAGES.RoleIsDefaultNotDelete.Title" value="The default roles can not be deleted." />
+    <!--CONFIG.ROLES END-->
+    
+  </texts>
+</localizationDictionary>

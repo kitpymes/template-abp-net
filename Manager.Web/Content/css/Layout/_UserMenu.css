@@ -1,0 +1,107 @@
+﻿#NavUserArea {
+    width: 100%;
+    min-height: 95px;
+}
+
+/* user-header */
+#NavUserArea .user-header{
+    position: relative;
+    padding: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color:#444;
+    color:white;
+}
+#NavUserArea .user-header .img-circle{
+    height: 26px;
+    margin: 3px;
+    width: 28px;
+}
+#NavUserArea .user-header .image i{
+    background-color: #46be8a;
+    position: absolute;
+    left: 27px;
+    bottom: 9px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+#NavUserArea .user-header .info{
+    padding: 5px 5px 5px 15px;
+    position: absolute;
+    left: 37px;
+}
+#NavUserArea .user-header .toggle-menu {
+    margin-left: 195px;
+    margin-top: 4px;
+}
+#NavUserArea .user-header .toggle-menu a{
+    padding: 10px 4px;
+}
+#NavUserArea .user-header .toggle-menu i{
+    color: white;
+}
+/* end */
+
+/* user-menu */
+#NavUserArea .user-menu {
+    float: left;
+    height: 51px;
+    width: 100%;
+}
+#NavUserArea .user-menu ul {
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+}
+#NavUserArea li {
+    display: table-cell;
+}
+#NavUserArea li.active{
+    background-color: rgba(130, 123, 123, 0.12);
+}
+#NavUserArea li a {
+    color: #333;
+    margin: 15px 0;
+    display: block;
+    text-align: center;
+    width: 59px;
+}
+#NavUserArea .dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -4px;
+}
+#NavUserArea .dropdown-menu > li > a,
+#NavUserArea .dropdown-menu > li > a:focus{
+    color:#666;
+    background-color: transparent;
+    margin: 2px 0;
+}
+#NavUserArea .dropdown-menu > li > a:hover{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#NavUserArea .dropdown-menu:before {
+  position: absolute;
+  top: -7px;
+  left: 21px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+ #NavUserArea .dropdown-menu:after {
+  position: absolute;
+  top: -6px;
+  left: 22px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+}
+/* end */          

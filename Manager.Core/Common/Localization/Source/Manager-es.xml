@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="es">
+  <texts>
+    <!--| MENU | ACCOUNT | CONFIG | DASHBOARD |-->
+    
+    <!--MENU-->
+    
+    <!--UserMenu-->
+    <text name="MENU.FullScreen" value="PANTALLA FULL" />
+    <text name="MENU.Logout" value="CERRAR SESION" />
+    <text name="MENU.Configuration" value="CONFIGURACION" />
+    
+    <!--GENERAL ModulesMenu-->
+    <text name="MENU.General" value="GENERAL" />
+    <text name="MENU.Dashboard" value="DASHBOARD" />
+    <text name="MENU.Reports" value="REPORTES" />
+    <text name="MENU.Emails" value="EMAILS" />
+    <text name="MENU.Tickets" value="TICKETS" />
+    
+    <!--MODULOS ModulesMenu-->
+    <text name="MENU.Modules" value="MODULOS" />
+    <text name="MENU.Customers" value="CLIENTES" />
+
+    <!--CONFIGURACION TabsMenu -->
+    <text name="MENU.Profile" value="PERFIL" />
+    <text name="MENU.Billing" value="FACTURACION" />
+    <text name="MENU.Company" value="EMPRESA" />
+    <text name="MENU.AuditsLog" value="LOG" />
+    <text name="MENU.Users" value="USUARIOS" />
+    <text name="MENU.Roles" value="ROLES" />
+    
+    <!--DASHBOARD TabsMenu -->
+    <text name="MENU.UserInfo" value="INFO USUARIOS" />
+    <text name="MENU.BrowserInfo" value="INFO NAVEGADOR" />
+
+    <!--MENU END-->
+
+    <!--ACCOUNT-->
+    <text name="ACCOUNT.LogIn" value="Iniciar sesión" />
+    <text name="ACCOUNT.Send" value="Enviar" />
+    <text name="ACCOUNT.EmailAddress" value="Email" />
+    <text name="ACCOUNT.Password" value="Contraseña" />
+    <text name="ACCOUNT.RememberMe" value="Recuérdame" />
+    <text name="ACCOUNT.ForgotPassword" value="Olvido su contraseña?" />
+    <text name="ACCOUNT.PasswordResetCode" value="Código de restablecimiento de contraseña." />
+    <text name="ACCOUNT.ForgotPasswordMessage" value="Un enlace de restablecimiento de contraseña será enviado a su correo electrónico. Si no recibe un correo electrónico a los pocos minutos, por favor vuelva a intentarlo." />
+    <text name="ACCOUNT.LoginFailed" value="¡Error de inicio de sesion!" />
+    <text name="ACCOUNT.InvalidEmailAddress" value="El email ingresado no existe en el sistema." />
+    <text name="ACCOUNT.TenantIsNotActive" value="La empresa {0} no está activa." />
+    <text name="ACCOUNT.InvalidPassword" value="Contraseña invalida" />
+    <text name="ACCOUNT.ThereIsNoTenantDefinedWithName{0}" value="No hay empresa definida con el nombre {0}" />
+    <text name="ACCOUNT.UserIsNotActiveAndCanNotLogin" value="El usuario {0} no está activo y no puede conectarse." />
+    <text name="ACCOUNT.EmailIsNotConfirmedAndCanNotLogin" value="El email no fue confirmado, por favor confirmelo" />
+    <text name="ACCOUNT.WaitingForConfirmEmailLink" value="Confirmar el enlace que enviamos a su correo electrónico." />
+    <text name="ACCOUNT.PasswordChangedSuccessfully" value="Su contraseña se ha cambiado correctamente." />
+    <text name="ACCOUNT.TenantNameCanNotBeEmpty" value="Nombre de la empresa no puede estar vacío" />
+    <text name="ACCOUNT.FormIsNotValidMessage" value="Formulario no es válido. Por favor, compruebe y corrija los errores." />
+    <text name="ACCOUNT.PleasEnterYourNewPassword" value="Por favor ingrese su nueva contraseña." />
+    <text name="ACCOUNT.PasswordRepeat" value="Repita la Contraseña" />
+    <text name="ACCOUNT.EmailAddressNotFindInSystem" value="La dirección de correo electrónico no existe en el sistema." />
+    <text name="ACCOUNT.WaitingForActivationEmail" value="Su cuenta está en espera de ser activada. Su email no ha sido confirmado." />
+    <text name="ACCOUNT.WaitingForActivationMessage" value="Su cuenta está en espera de ser activada por el administrador del sistema." />
+    <text name="ACCOUNT.YouCanNotResetYourPasswordSendAResetPasswordLinkToYourEmail" value="No se puede restablecer su contraseña. Primero deberá enviar un enlace de restablecimiento de contraseña a su email." />
+    <text name="ACCOUNT.InvalidPasswordResetCode" value="Código de restablecimiento de contraseña inválido." />
+    <text name="ACCOUNT.ResetCodeExpired" value="Código de restablecimiento de contraseña inválido ha caducado. Deberá enviar un enlace de restablecimiento de contraseña nuevamente." />
+    <!--ACCOUNT END-->
+    
+    <!--CONFIG-->
+    <text name="CONFIG.PROFILE.Name" value="Nombre" />
+    <text name="CONFIG.PROFILE.Surname" value="Apellido" />
+    <text name="CONFIG.PROFILE.EmailAddress" value="Email" />
+    <text name="CONFIG.PROFILE.Password" value="Nueva contraseña" />
+    <text name="CONFIG.PROFILE.PasswordRepeat" value="Repetir contraseña" />
+    <text name="CONFIG.PROFILE.Save" value="Guardar" />
+    <text name="CONFIG.PROFILE.Edit" value="Editar" />
+    <text name="CONFIG.PROFILE.ShowPassword" value="Mostrar contraseña" />
+
+    <text name="CONFIG.ROLES.Name" value="Nombre" />
+    <text name="CONFIG.ROLES.DisplayName" value="Nombre a mostrar" />
+    <!--CONFIG END-->
+  
+    
+    <!--COMMON-->
+
+    <!-- MESSAGES -->
+    <text name="COMMON.MSG.EXCEPTION.ErrorMessageUserDefault" value="Ocurrio un error inesperado, por favor intente mas tarde." />
+    <text name="COMMON.MSG.ChangesSuccessfullySaved" value="Los cambios se guardaron correctamente." />
+    <!-- MESSAGES END-->
+
+    <!-- VALIDATIONS -->
+    <text name="COMMON.MSG.VALIDATION.Mandatory" value="El campo {0} es obligatorio." />
+    <text name="COMMON.MSG.VALIDATION.InvalidFormat" value="El campo {0} tiene un formato invalido." />
+    <text name="COMMON.MSG.VALIDATION.MaxLength" value="El campo {0} debe contener como máximo {1} caracteres." />
+    <text name="COMMON.MSG.VALIDATION.MinLength" value="El campo {0} debe contener como minimo {1} caracteres." />
+    <text name="COMMON.MSG.VALIDATION.Match" value="El campo {0} no coincide con el campo {1}." />
+    <!-- VALIDATIONS END-->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <text name="Home" value="Inicio" />
+   
+    <text name="WellcomeMessage" value="Bienvenido a Manager!" />
+
+   
+    <text name="TenancyName" value="Nombre de la empresa" />
+    <text name="UserNameOrEmail" value="Nombre de usuario o correo electrónico" />
+    
+    
+  
+    <text name="NameSurname" value="Nombre Apellido" />
+    <text name="UserName" value="Nombre de usuario" />
+    <text name="Name" value="Nombre" />
+    <text name="Surname" value="Apellido" />
+    <text name="EmailAddress" value="Dirección de correo electrónico" />
+    
+    <text name="Tenants" value="Empresas" />
+    <text name="CreateNewTenant" value="Crear nueva empresa" />
+    <text name="AdminEmailAddress" value="Dirección de correo electrónico del administrador" />
+    <text name="Save" value="Guardar" />
+    <text name="Cancel" value="Cancelar" />
+    
+   
+    <!--COMMON END-->
+    
+     <!--MANDATORY-->
+    
+    <!--MANDATORY END-->
+
+     <!--MESSAGES-->
+    
+    
+    <text name="InvalidUserNameOrPassword" value="Usuario o contraseña invalido" />
+    
+    
+    
+    
+    
+    
+    <text name="PleaseEnterLoginInformation" value="Por favor, introduzca la información de inicio de sesión" />
+   
+    
+    
+    
+   
+    
+    <text name="NotResetPasswordSendPasswordResetLinkToYourMail" value="No se puede restablecer su contraseña. Primero deberá enviar un enlace de restablecimiento de contraseña a su correo electrónico." />
+    <text name="PasswordRepeatIsInvalid" value="Las contraseñas no coinciden!" />
+    <text name="PasswordResetCodeIsInvalid" value="El código de restablecimiento de contraseña no es válido!" />
+    <text name="PasswordResetCodeIsExpire!" value="El código de restablecimiento de contraseña ha caducado!" />
+    <text name="SavedSuccessfully" value="Guardado correctamente" />
+    <text name="TenantName_Regex_Description" value="El nombre de la empresa debe ser de al menos 2 caracteres, empieza con una letra y continua con una letra, número, guión o un guión bajo." />
+    <text name="DefaultPasswordIs" value="La contraseña por defecto es {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="Puede estar vacía para iniciar la sesión como anfitrión." />
+    <text name="Register" value="Registro" />
+    <text name="RegisterSuccessfully" value="Se ha registrado correctamente" />
+    <text name="OrLoginWith" value="o iniciar sesión con" />
+    
+    
+    <text name="YourAccountIsActivated" value="¡Felicitaciones! Su cuenta se activará. Introduzca su dirección de correo electrónico y contraseña para iniciar sesión." />
+    
+    <text name="ThanksRegisterWaitingForActivationEmail" value="Gracias por haberse registrado, por favor confirme el email que le hemos enviado." />
+    <text name="TenantSelection" value="Selección de Empresa" />
+    <text name="TenantSelection_Detail" value="Por favor seleccione una de las siguientes empresas." />
+    
+    <!--MESSAGES END-->
+
+    <!--MAIL-->
+    <text name="Mail.ForgotPasword.Subject" value="Restablecimiento de contraseña" />
+    <text name="Mail.ForgotPasword.HtmlTitle" value="Restablecimiento de contraseña" />
+    <text name="Mail.ForgotPasword.BodyTitle" value="Cambie su contraseña, la misma expira en 24hs!" />
+    <text name="Mail.ForgotPasword.BodyDescription" value="Haga clic en el siguiente enlace para restablecer la contraseña:" />
+    <!--MAIL END-->
+
+  </texts>
+</localizationDictionary>

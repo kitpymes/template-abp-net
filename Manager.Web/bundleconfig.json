@@ -1,0 +1,254 @@
+[
+  {
+    "outputFileName": "Content/css/main.min.css",
+    "inputFiles": [
+      "Content/css/main.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/bootstrap/bootstrap-paper.min.css",
+    "inputFiles": [
+      "Content/css/bootstrap/bootstrap-paper.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/jsgrid/jsgrid-1.5.2.min.css",
+    "inputFiles": [
+      "Content/jsgrid/jsgrid-1.5.2.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/jsgrid/jsgrid-1.5.2.min.js",
+    "inputFiles": [
+      "Content/jsgrid/jsgrid-1.5.2.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/jsgrid/jsgrid-custom.min.css",
+    "inputFiles": [
+      "Content/jsgrid/jsgrid-custom.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/jsgrid/jsgrid-theme-1.5.2.min.css",
+    "inputFiles": [
+      "Content/jsgrid/jsgrid-theme-1.5.2.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/sweetalert/sweet-alert.min.css",
+    "inputFiles": [
+      "Content/sweetalert/sweet-alert.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/sweetalert/sweet-alert.min.js",
+    "inputFiles": [
+      "Content/sweetalert/sweet-alert.js"
+    ]
+  },
+  {
+    "outputFileName": "Views/Shared/_LeftMenu.min.css",
+    "inputFiles": [
+      "Views/Shared/_LeftMenu.css"
+    ]
+  },
+  {
+    "outputFileName": "Views/Shared/_LeftMenu.min.js",
+    "inputFiles": [
+      "Views/Shared/_LeftMenu.js"
+    ]
+  },
+  {
+    "outputFileName": "Views/Account/Login.min.js",
+    "inputFiles": [
+      "Views/Account/Login.js"
+    ]
+  },
+  {
+    "outputFileName": "Views/Account/login.min.css",
+    "inputFiles": [
+      "Views/Account/login.css"
+    ]
+  },
+  {
+    "outputFileName": "Views/Account/ResetPassword.min.css",
+    "inputFiles": [
+      "Views/Account/ResetPassword.css"
+    ]
+  },
+  {
+    "outputFileName": "Views/Account/ResetPassword.min.js",
+    "inputFiles": [
+      "Views/Account/ResetPassword.js"
+    ]
+  },
+  {
+    "outputFileName": "Views/Layout/_ModulesMenu.min.css",
+    "inputFiles": [
+      "Views/Layout/_ModulesMenu.css"
+    ]
+  },
+  {
+    "outputFileName": "Views/Layout/_LeftMenu.min.min.js",
+    "inputFiles": [
+      "Views/Layout/_LeftMenu.min.js"
+    ]
+  },
+  {
+    "outputFileName": "Views/Layout/_ModulesMenu.min.js",
+    "inputFiles": [
+      "Views/Layout/_ModulesMenu.js"
+    ]
+  },
+  {
+    "outputFileName": "Views/Layout/_UserMenu.min.css",
+    "inputFiles": [
+      "Views/Layout/_UserMenu.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/scrollable/asScrollable.min.css",
+    "inputFiles": [
+      "Content/scrollable/asScrollable.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/scrollable/jquery-asScrollable.min.js",
+    "inputFiles": [
+      "Content/scrollable/jquery-asScrollable.js"
+    ]
+  },
+  {
+    "outputFileName": "Views/Shared/_TabsMenu.min.css",
+    "inputFiles": [
+      "Views/Shared/_TabsMenu.css"
+    ]
+  },
+  {
+    "outputFileName": "Views/Layout/_UserMen.min.css",
+    "inputFiles": [
+      "Views/Layout/_UserMen.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/floatlabel/floatlabel.min.css",
+    "inputFiles": [
+      "Content/floatlabel/floatlabel.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/floatlabel/floatlabel.min.js",
+    "inputFiles": [
+      "Content/floatlabel/floatlabel.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/segmenteffect/js/segmenteffect.min.js",
+    "inputFiles": [
+      "Content/segmenteffect/js/segmenteffect.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/segmenteffect/css/segmenteffect.min.css",
+    "inputFiles": [
+      "Content/segmenteffect/css/segmenteffect.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/Configuration/_Profile.min.css",
+    "inputFiles": [
+      "Content/css/Configuration/_Profile.css"
+    ]
+  },
+  {
+    "outputFileName": "Views/Shared/_TabsMenu.min.css",
+    "inputFiles": [
+      "Views/Shared/_TabsMenu.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/Layout/_UserMenu.min.css",
+    "inputFiles": [
+      "Content/css/Layout/_UserMenu.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/Layout/_ModulesMenu.min.css",
+    "inputFiles": [
+      "Content/css/Layout/_ModulesMenu.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/Shared/_TabsMenu.min.css",
+    "inputFiles": [
+      "Content/css/Shared/_TabsMenu.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/scripts/Configuration/_Profile.min.js",
+    "inputFiles": [
+      "Content/scripts/Configuration/_Profile.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/Account/Login.min.css",
+    "inputFiles": [
+      "Content/css/Account/Login.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/scripts/Account/ResetPassword.min.js",
+    "inputFiles": [
+      "Content/scripts/Account/ResetPassword.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/Account/ResetPassword.min.css",
+    "inputFiles": [
+      "Content/css/Account/ResetPassword.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/effects/particles/particles.min.js",
+    "inputFiles": [
+      "Content/effects/particles/particles.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/scripts/Account/ForgotPassword.min.js",
+    "inputFiles": [
+      "Content/scripts/Account/ForgotPassword.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/Account/ForgotPassword.min.css",
+    "inputFiles": [
+      "Content/css/Account/ForgotPassword.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/scripts/Configuration/_Roles.min.js",
+    "inputFiles": [
+      "Content/scripts/Configuration/_Roles.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/css/Upload/_AvatarProfile.min.css",
+    "inputFiles": [
+      "Content/css/Upload/_AvatarProfile.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/themes/bootstrap-paper.min.css",
+    "inputFiles": [
+      "Content/themes/bootstrap-paper.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/effects/segmente/segmenteffect.min.css",
+    "inputFiles": [
+      "Content/effects/segmente/segmenteffect.css"
+    ]
+  }
+]

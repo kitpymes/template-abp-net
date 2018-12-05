@@ -1,0 +1,9 @@
+﻿#ProfileArea .glyphicon-eye-open{
+    right: 13px;
+    top: 7px;
+    cursor: pointer;
+    position: absolute;
+}
+#ProfileArea .float-label.has-feedback .form-control-feedback{
+    top: -17px;
+}

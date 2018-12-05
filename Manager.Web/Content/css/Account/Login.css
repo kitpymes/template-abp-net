@@ -1,0 +1,99 @@
+﻿#BodyArea{
+    margin-left:0;
+}
+#LoginArea{
+    position: absolute;
+    width:100%;
+}
+#LoginArea #LanguajeArea {
+    position: relative;
+    z-index: 9;
+}
+#LoginArea a {
+    color: #87c8e9;
+    text-decoration: none;
+    padding: 8px;
+}
+#LoginArea a:hover, #LoginArea a:focus {
+    background-color:rgba(186, 182, 182, 0.4);
+}
+#LoginArea a:active{
+    background-color:transparent;
+}
+#LoginArea #LoginForm {
+    color: #fff;
+    width: 360px;
+    background-color: rgba(0, 0, 0, 0.67);
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 20px;
+}
+#LoginArea #LoginForm legend{
+    color:white;
+    width: auto;
+    float: left;
+}
+#LoginArea .navbar-nav{
+    margin-top: -10px;
+    float:right;
+}
+#LoginArea .nav .open > a, 
+#LoginArea .nav .open > a:hover, 
+#LoginArea .nav .open > a:focus,
+#LoginArea .navbar-nav a:hover, 
+#LoginArea .navbar-nav a:focus{
+    background-color: transparent;
+}
+#LoginArea .form-control {
+    font-size: 14px;
+    color:white;
+}
+#LoginArea #LoginSubmitButton {
+    background-color: white;
+    color:#777;
+}
+#LoginArea .dropdown-menu {
+    top: 77%;
+    min-width: 0;
+    padding:0;
+    border-radius: 2px;
+}
+#LoginArea .dropdown-menu a:hover {
+    background-color: #555;
+color: white;
+}
+#LoginArea .dropdown-menu a {
+    color:#666;
+}
+#LoginArea .dropdown-menu:before {
+  position: absolute;
+  top: -7px;
+  left: 9px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+#LoginArea .dropdown-menu:after {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+}
+#LoginForgotPasswordModalArea .modal-body .well {
+    color: #888;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-box-shadow: 6px 7px 8px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 8px -6px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 8px -6px rgba(0,0,0,0.75);
+}
+#LoginArea .form-control-feedback, #LoginForgotPasswordModalArea .form-control-feedback{
+    top: -17px !important;
+}

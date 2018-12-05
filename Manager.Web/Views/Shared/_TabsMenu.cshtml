@@ -1,0 +1,56 @@
+﻿@using Manager.Web.Views
+@using Abp.Web.Mvc.Extensions
+@model Manager.Web.Models.Shared.TabsMenuViewModel
+
+@Html.IncludeStyle("~/Content/css/Shared/_TabsMenu.min.css")
+
+@{
+    var calculateMenuUrl = new Func<string, string>((url) =>
+    {
+        if (string.IsNullOrEmpty(url))
+        {
+            return ApplicationPath;
+        }
+
+        if (UrlChecker.IsRooted(url))
+        {
+            return url;
+        }
+
+        return ApplicationPath + url;
+    });
+}
+
+<div id="tab-header">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tabs-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse" id="tabs-collapse">
+        <ul class="nav nav-tabs nav-justified">
+            @foreach (var menuItem in Model.Menu.Items)
+            {
+                MenuCustomData customData = (menuItem.CustomData != null) ? (menuItem.CustomData as MenuCustomData) : null;
+
+                <li class="@(Model.ActiveMenuItemName == menuItem.Name ? "active" : "")">
+                    <a role="button" data-url="@(customData != null && customData.Disabled ? "" : calculateMenuUrl(menuItem.Url))" class="@(customData != null && customData.Disabled ? "disabled" : "")" data-toggle="tab">
+
+                        <span>@menuItem.DisplayName</span>
+
+                        @if (customData != null && customData.Disabled)
+                        {
+                            <span class="glyphicon glyphicon-lock"></span>
+                        }
+                    </a>
+
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+

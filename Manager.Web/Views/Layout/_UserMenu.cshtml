@@ -1,0 +1,48 @@
+﻿@using Abp.Extensions;
+@using Abp.Web.Mvc.Extensions
+@model Manager.Web.Models.Layout.UserMenuViewModel
+
+@Html.IncludeStyle("~/Content/css/Layout/_UserMenu.min.css")
+
+<div id="NavUserArea">
+
+    <div class="user-header">
+        <div class="pull-left image">
+            <img src="@Html.Raw(Model.AvatarPath)" class="img-circle">
+            <i></i>
+        </div>
+
+        <div class="pull-left info">
+            <p>@Model.LoginInformations.User.Name.TruncateWithPostfix(22)</p>
+        </div>
+
+        <div class="toggle-menu">
+            <a role="button">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="user-menu">
+        <ul>
+            @Html.Action("LanguageSelection", "Layout")
+
+            @foreach (var menu in Model.Menu.Items)
+            {
+                MenuCustomData customData = (menu.CustomData as MenuCustomData) != null ? (menu.CustomData as MenuCustomData) : null;
+
+                <li @(customData != null && !string.IsNullOrEmpty(customData.Class) ? "class=" + customData.Class : "")>
+
+                    <a role="button" data-url="@menu.Url" title="@menu.DisplayName" @(customData != null && customData.Tooltip != null ? customData.Tooltip : "")>
+
+                        @if (!string.IsNullOrWhiteSpace(menu.Icon))
+                        {
+                            <i class="@menu.Icon" aria-hidden="true"></i>
+                        }
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+
+</div>

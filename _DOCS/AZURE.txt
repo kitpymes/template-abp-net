@@ -1,0 +1,14 @@
+
+-- CODE WEB
+https://easymanager.scm.azurewebsites.net/dev
+
+-- WEB 
+http://easymanager.azurewebsites.net/
+
+- database
+SERVER: easymanager.database.windows.net
+user: easymanager
+pass: Manager01_
+
+
+Server=tcp:easymanager.database.windows.net,1433;Initial Catalog=Manager;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
