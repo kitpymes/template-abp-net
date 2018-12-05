@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DFA48E27-7D53-4955-A722-3D91A7119BE7}"
 	ProjectSection(SolutionItems) = preProject
@@ -28,8 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager.Migrator", "Tools\M
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD73CCCD-310E-4662-A62C-45DAE1DFE33D}"
 	ProjectSection(SolutionItems) = preProject
-		WE-Palette.css = WE-Palette.css
-		WebEssentials2015-Settings.json = WebEssentials2015-Settings.json
+		Solution Items\WE-Palette.css = Solution Items\WE-Palette.css
+		Solution Items\WebEssentials2015-Settings.json = Solution Items\WebEssentials2015-Settings.json
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager.Tests", "Tests\Manager.Tests\Manager.Tests.csproj", "{F27B6B47-9ED0-4755-AB59-6BE16A3DCF9E}"
@@ -76,33 +76,7 @@ Global
 		{6F98C2F2-898A-421B-BE3D-68FE69EC0646} = {7408541C-F99C-4197-B203-136115BD1CB9}
 		{F27B6B47-9ED0-4755-AB59-6BE16A3DCF9E} = {7E85C7E5-70BD-4C9D-B052-D95955F46609}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://sferrari.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Manager.Core\\Manager.Core.csproj
-		SccProjectName1 = Manager.Core
-		SccLocalPath1 = Manager.Core
-		SccProjectUniqueName2 = Manager.Application\\Manager.Application.csproj
-		SccProjectName2 = Manager.Application
-		SccLocalPath2 = Manager.Application
-		SccProjectUniqueName3 = Manager.EntityFramework\\Manager.EntityFramework.csproj
-		SccProjectName3 = Manager.EntityFramework
-		SccLocalPath3 = Manager.EntityFramework
-		SccProjectUniqueName4 = Manager.WebApi\\Manager.WebApi.csproj
-		SccProjectName4 = Manager.WebApi
-		SccLocalPath4 = Manager.WebApi
-		SccProjectUniqueName5 = Manager.Web\\Manager.Web.csproj
-		SccProjectName5 = Manager.Web
-		SccLocalPath5 = Manager.Web
-		SccProjectUniqueName6 = Tools\\Manager.Migrator\\Manager.Migrator.csproj
-		SccProjectTopLevelParentUniqueName6 = Manager.sln
-		SccProjectName6 = Tools/Manager.Migrator
-		SccLocalPath6 = Tools\\Manager.Migrator
-		SccProjectUniqueName7 = Tests\\Manager.Tests\\Manager.Tests.csproj
-		SccProjectTopLevelParentUniqueName7 = Manager.sln
-		SccProjectName7 = Tests/Manager.Tests
-		SccLocalPath7 = Tests\\Manager.Tests
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B345324F-AAD3-46E9-8DEF-F554CA3FD91F}
 	EndGlobalSection
 EndGlobal
